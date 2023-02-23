@@ -368,8 +368,8 @@ runs:
       if: ${{ inputs.target == 'win64' }}
       shell: bash
       env:
-        CC: x86_64-w64-mingw32-gcc${{ inputs.suffix }}
-        CXX: x86_64-w64-mingw32-g++${{ inputs.suffix }}
+        CC: x86_64-w64-mingw32-gcc-posix
+        CXX: x86_64-w64-mingw32-g++$-posix
         EXE_WRAPPER: wine
         PKG_CONFIG: "false"
         WINEDEBUG: "-all"
